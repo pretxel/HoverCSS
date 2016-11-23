@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Demo Hover CSS</title>
+    <link rel="stylesheet" href="node_modules/hover.css/css/hover-min.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet"
+          media="all">
+
+    <style>
+        body {
+            font-family: 'Lato', sans-serif;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        span {
+            display: block;
+            margin: 0 10% 20px 10%;
+        }
+
+        .container {
+            display: inline-block;
+            margin: 0px 20px 20px 20px;
+        }
+
+        [class^="hvr-"] {
+            margin: .4em;
+            padding: 1em;
+            cursor: pointer;
+            background: #18708e;
+            text-decoration: none;
+            color: #c5b4b4;
+            -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        .hvr-icon-forward:before {
+            content: "\f138";
+            position: absolute;
+            right: 1em;
+            padding: 0 1px;
+            font-family: FontAwesome;
+            transform: translateZ(0);
+            transition-duration: 0.1s;
+            transition-property: transform;
+            transition-timing-function: ease-out;
+        }
+
+
+    </style>
+</head>
+<body>
+
+<h1>Ejemplos con Hover CSS</h1>
+<span>Para aplicar los estilos se tiene que cargar la hoja de estilos y aplicar la clase correspondiente. Para mas información <a
+        href="http://ianlunn.github.io/Hover/">http://ianlunn.github.io/Hover/</a><br><a
+        href="https://github.com/IanLunn/Hover">https://github.com/IanLunn/Hover</a></span>
+<div class="container">
+    <a href="#" class="hvr-grow">grow</a>
+    <br>
+    <code><b>class:</b>hvr-grow</code>
+</div>
+
+<div class="container">
+    <a href="#" class="hvr-sweep-to-right">sweep-to-right</a>
+    <br>
+    <code><b>class:</b>hvr-sweep-to-right</code>
+</div>
+
+<div class="container">
+    <a href="#" class="hvr-radial-in">radial-in</a>
+    <br>
+    <code><b>class:</b>hvr-radial-in</code>
+</div>
+
+<div class="container">
+    <a href="#" class="hvr-icon-push">icon-push</a>
+    <br>
+    <code><b>class:</b>hvr-icon-push</code>
+</div>
+
+<div class="container">
+    <a href="#" class="hvr-ripple-out">ripple-out</a>
+    <br>
+    <code><b>class:</b>hvr-ripple-out</code>
+</div>
+
+<div class="container">
+    <a href="#" class="hvr-underline-from-left">underline-from-left</a>
+    <br>
+    <code><b>class:</b>hvr-underline-from-left</code>
+</div>
+
+<div class="container">
+    <a href="#" class="hvr-float-shadow">float-shadow</a>
+    <br>
+    <code><b>class:</b>hvr-float-shadow</code>
+</div>
+
+<div class="container">
+    <a href="#" class="hvr-curl-top-right">curl-top-right</a>
+    <br>
+    <code><b>class:</b>hvr-curl-top-right</code>
+</div>
+
+</body>
+</html>
